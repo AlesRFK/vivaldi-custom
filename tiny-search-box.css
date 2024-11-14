@@ -1,0 +1,11 @@
+/* tiny searchbox */
+.mainbar .UrlBar-SearchField {transition: min-width .5s ease-out, max-width .5s ease-out, flex-basis .7s ease-out !important; } /* add smooth expanding animation */
+.normal .mainbar .UrlBar-SearchField:not(:focus-within):not(:hover) {min-width: 26.5px; max-width: 26.5px; transition: min-width .5s ease-in-out, max-width .5s ease-in-out !important;}
+.normal .mainbar .UrlBar-SearchField:not(:focus-within):not(:hover) > .searchfield-input {margin-left: -25px; margin-right: -22px; opacity: 0; z-index: 1;}
+.normal .mainbar .UrlBar-SearchField > .toolbar-insideinput:last-child {visibility: hidden;}
+.normal .mainbar .UrlBar-SearchField:is(:focus-within, :hover) > .toolbar-insideinput:last-child {visibility: visible; transition: visibility 0s .2s !important;}
+/* extra expand width when start typing */
+.mainbar .UrlBar-SearchField {max-width: 300px;}
+.mainbar .UrlBar-SearchField:has(input:not(:placeholder-shown)):focus-within {flex-basis: 300px;}
+/* expand dropdown list to full width */
+.mainbar .UrlBar-SearchField .OmniDropdown {width: max-content; max-width: 90vw;}

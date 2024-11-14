@@ -1,0 +1,8 @@
+#panel {
+    transition: all 0.3s ease; /* Smooth transition for unrolling */
+    transform: translateX(-100%); /* Start panel off-screen */
+}
+
+#panel:hover {
+    transform: translateX(0); /* Unroll on hover */
+}

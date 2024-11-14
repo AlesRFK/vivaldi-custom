@@ -1,0 +1,18 @@
+/* Target Speed Dial container */
+#speedDial {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Align each Speed Dial tile to the right */
+#speedDial .tile {
+  display: inline-block;
+  margin-left: auto;
+}
+
+/* Make sure the links inside the tiles align properly */
+#speedDial .tile .tile-link {
+  display: block;
+  text-align: center;
+}
